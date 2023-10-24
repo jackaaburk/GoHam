@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="Ham.css">
-<title>Lesson 1</title>
-<style>
-  h1 {
-    color: #973523;
-    background-color: #dc9997;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  body{
-    color: #973523;
-    background-color: #dc9997;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  footer {
-    text-align: center;
-  }
-</style>
+<meta charset="utf-8">
+<meta name="GoHam" content="Going Ham for fun">
+<link rel="stylesheet"  type="text/css" href="css/orange.css">
+<title>GoHam</title>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+window.onload = init;
+</script>
 </head>
 <body>
-
-
-
-<h1>I Love Ham</h1>
-<p>I like Ham in sandwiches, with peas and carrots, and with potatoes. I like smoked ham, baked ham, and glazed ham.</p>
-  <video width="320" height="180" controls>
-  <source src="plug.mp4" type="video/mp4">
-</video>
-<br>
-<audio controls>
-  <source src="pig.mp3" type="audio/mpeg">
-  Your browser does not support the audio tag.
-</audio>
+<header>
+<p>Going HAM for fun</p>
+</header>
 <nav>
 <p>
-<a href="index.html">Home Page</a></p>
-</nav>
-<footer class="desktop">
-  <hr>
-  <a id="vLink1" href="https://validator.w3.org/check?uri=https://jackaaburk.github.io/GoHam/index.html">
-  <strong> HTML </strong> Valid! </a> &nbsp; 
-  <a id="vLink2" href="https://jigsaw.w3.org/css-validator/validator?uri=https://jackaaburk.github.io/GoHam/index.html?profile=css3">
-  <strong> CSS </strong> Valid! </a>
+<a class="navlinks" href="index.html">Home</a></p>
+<p>
+<a class="navlinks" href="index.html">Home</a></p>
+</nav> 
 
-  </footer>
+<main>
+<article>
+<h2>I Love Ham</h2>
+<img class="floatright" id="img-rotate" src="ham.jpg" height="114"
+alt="Ham">
+Ham is a delectable meat renowned for its rich flavor and versatility. 
+Its savory, smoky notes make it a popular choice for sandwiches, salads, 
+and breakfast dishes. The tender texture and salty, savory taste of ham can
+ elevate the flavor of various recipes, while its natural juiciness ensures
+  a succulent dining experience. Whether enjoyed as a centerpiece for holiday feasts or 
+  a delightful addition to everyday meals, ham's deliciousness is hard to beat.
+</article> 
+
+<article>
+<h2>What Go HAM means</h2>
+<video class="floatright" id="video-rotate" height="150" controls="controls">
+<source src="plug.mp4" type="video/mp4">
+Your browser does not support the HTML5 video element.
+</video>
+"Go ham" is an informal slang phrase that encourages someone to put in their maximum effort or energy into a 
+particular task or activity. It's an abbreviation for "going hard as a mothaflippa" and is often used to motivate 
+or challenge someone to give their all, push their limits, and show relentless determination. Whether in sports, work, 
+or any endeavor, going ham signifies an unwavering commitment to achieving one's goals, often with a sense of intensity 
+and passion that leaves nothing in reserve.
+</article>
+
+<article>
+<h2>How to Cook HAMr</h2>
+To cook ham, start by preheating your oven to the recommended temperature, 
+usually around 325°F (163°C). Place the ham in a roasting pan, cover it with foil to 
+retain moisture, and cook for about 15-20 minutes per pound, or until it reaches an internal 
+temperature of 145°F (63°C). Basting with glaze or juices periodically can enhance flavor, and 
+letting it rest for a few minutes before slicing ensures a juicy and flavorful result.
+<p>
+<audio controls="controls">
+<source src="pig.mp3" type="audio/mp3">
+Your browser does not support the HTML5 audio element.
+</audio>
+</p>
+</article>
+</main> 
+
+<footer>
+<p>
+VERIFY US ON:
+</p>
+<p>
+<a id="vLink1"><strong> HTML </strong> Valid! </a> |
+<a id="vLink2"><strong> CSS </strong> Valid! </a>
+</p>
+<p>
+Copyleft &copy; All rights reversed by GO HAM
+</p>
+</footer>
+
 </body>
 </html>
