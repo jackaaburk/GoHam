@@ -73,3 +73,14 @@ h1 {
   background-color: #dc9997;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#img-rotate {
+    -ms-transform: rotate(345deg);
+    -webkit-transform: rotate(345deg);
+    transform: rotate(345deg);
+}
+#video-rotate {
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
