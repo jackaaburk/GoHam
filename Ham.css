@@ -87,4 +87,7 @@ h1 {
 #logo-rotate {
   -webkit-transform: rotateY(180deg); /* Safari and Chrome */
   transform: rotateY(180deg);
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 10%;
 }
