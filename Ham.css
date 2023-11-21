@@ -79,6 +79,7 @@ overflow: hidden;
 overflow-clip-margin: 20px;  
 width:20%; 
 height:auto;
+transform:scaleX(-1);
 }
 #img-rotate {
     -ms-transform: rotate(345deg);
