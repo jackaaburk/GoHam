@@ -74,6 +74,12 @@ h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.hampng {
+overflow: hidden; 
+overflow-clip-margin: 20px;  
+width:25px; 
+height:20;
+}
 #img-rotate {
     -ms-transform: rotate(345deg);
     -webkit-transform: rotate(345deg);
